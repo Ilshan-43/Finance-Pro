@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finance Pro - Your Financial Experts, providing financial consulting, tax planning, and investment management.">
+    <meta name="keywords" content="Finance Pro, financial consulting, tax planning, investment management, financial success">
+    <meta name="author" content="Finance Pro">
+    <title>Finance Pro - Your Financial Experts</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="/assets/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome Icons -->
+</head>
+<body>
+
+    <!-- Header Section with Sticky Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Finance Pro</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Your Trusted Financial Partner</h2>
+            <p>Helping individuals and businesses achieve financial success</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <video autoplay muted loop>
+            <source src="/assets/videos/finance-background.mp4" type="video/mp4">
+        </video>
+    </section>
+
+  <!-- Services Section with AOS Animations -->
+<section id="services" class="section-padding">
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="/Videos/3256544-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-container">
+            <!-- QuickBooks Data Analytics -->
+            <div class="service-item" data-aos="fade-up" onclick="openModal('quickbooks-data-analytics')">
+                <h3>QuickBooks Data Analytics</h3>
+                <p>We provide detailed insights into your QuickBooks data, offering valuable analytics to help optimize your financial operations.</p>
+                <a href="#quickbooks" class="btn-view">View</a>
+            </div>
+
+            <!-- Costing -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <h3>Costing</h3>
+                <p>Our costing services help you determine the true cost of products, services, and projects, improving profitability and efficiency.</p>
+                <a href="#costing" class="btn-view">View</a>
+            </div>
+
+            <!-- Financial Reporting -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <h3>Financial Reporting</h3>
+                <p>We offer comprehensive financial reporting services to help you track performance and make informed financial decisions.</p>
+                <a href="#financial-reporting" class="btn-view">View</a>
+            </div>
+
+            <!-- Bookkeeping -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                <h3>Bookkeeping</h3>
+                <p>Our bookkeeping services ensure your financial records are maintained accurately, so you can focus on growing your business.</p>
+                <a href="#bookkeeping" class="btn-view">View</a>
+            </div>
+
+            <!-- ERP Handling -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="800">
+                <h3>ERP Handling</h3>
+                <p>We specialize in managing ERP systems, offering implementation, customization, and ongoing maintenance for seamless integration with your business processes.</p>
+                <a href="#erp-handling" class="btn-view">View</a>
+            </div>
+
+            <!-- Auditing -->
+            <div class="service-item" data-aos="fade-up" data-aos-delay="1000">
+                <h3>Auditing</h3>
+                <p>Our auditing services help ensure the accuracy and compliance of your financial records, offering an independent review to maintain transparency and trust.</p>
+                <a href="#auditing" class="btn-view">View</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- About Us Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p>At Finance Pro, we are committed to providing high-quality financial services. Our goal is to assist both individuals and businesses in making informed financial decisions that lead to long-term success.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with AOS Animations -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-item" data-aos="fade-up">
+                    <p>"Finance Pro transformed our approach to business finances. Their advice has been invaluable!"</p>
+                    <p><strong>- Client A</strong></p>
+                </div>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                    <p>"The investment strategies recommended by Finance Pro helped me grow my portfolio significantly."</p>
+                    <p><strong>- Client B</strong></p>
+                </div>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                    <p>"I trust Finance Pro with my personal finances. They have always provided the best advice."</p>
+                    <p><strong>- Client C</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with Social Media Links and Smooth Scroll -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Finance Pro. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        
+        // Sticky Header functionality
+        window.onscroll = function() {stickyHeader()};
+        var header = document.querySelector("header");
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+        // Form Validation
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            if (name == "" || email == "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
